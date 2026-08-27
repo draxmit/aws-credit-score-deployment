@@ -44,7 +44,8 @@ def invoke_endpoint(record: dict) -> tuple[str, dict]:
 def main():
     st.set_page_config(page_title="Credit Score Classifier (AWS)", layout="wide", initial_sidebar_state="expanded")
     st.title("Credit Score Classification (AWS)")
-    st.caption("Assess an applicant's credit score (Good / Standard / Poor) using an AWS SageMaker endpoint.")
+    st.caption("Credit score classification served through a local or AWS-backed model.")
+    st.caption("Assess an applicant's credit score (Good / Standard / Poor). Fill the profile and predict.")
 
     with st.form("applicant"):
         with st.expander("Income & balance", expanded=True):
